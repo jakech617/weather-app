@@ -1,0 +1,52 @@
+.navbar-brand {
+    position: relative;
+    font-size: xx-large;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#searchBtn {
+    border-color:rgb(30, 142, 253);
+    border-radius: 15%;
+    color: white;
+}
+  
+.fas {
+    font-size: 20px;
+    transition: all .3s ease-in-out;
+}
+
+h3 {
+    padding-top: 1rem;
+}
+
+#extended-forecast {
+    display: flex;
+    flex-wrap: wrap;
+ }
+ 
+.card {
+    flex: 1 0 500px;
+    box-sizing: border-box;
+    margin: 1rem .25em;
+}
+
+.favorable {
+    border-radius: 10px;
+    padding: 5%;
+    background-color: green;
+    color: white;
+}
+  
+.moderate {
+    border-radius: 10px;
+    padding: 5%;
+    background-color: orange;
+    color: white;
+}
+  
+.severe {
+    border-radius: 10px;
+    padding: 5%;
+    background-color: red;
+    color: white;
+}
