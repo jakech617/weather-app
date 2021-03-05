@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"/>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"/>
+  <link rel="stylesheet" href="./assets/css/style.css"/>
+  <title>Weather Dashboard</title>
+</head>
+
+<body>
+  
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark"> 
+    <div class="container" id="nav">
+      <a class="navbar-brand">Weather Dashboard</a>
+      </div>
+    </nav>
+
+  <div class="container">
+    <div class="row">
+      <div class="cardlist" style="width: 20rem;">
+        <div class="card-header">
+        Search by City
+        <input id="inputCity">
+        <button class="bg-primary" id="searchBtn"><i class="fas fa-search"></i></button>
+      <ul id="searchedCity" class="list-group list-group-flush" style="list-style-type: none; padding-left: 10%;"></ul>
+      </div> 
+    </div>               
+
+<main id="displayCity">
+  <div class="col-md-12">
+    <h1><span id="displayCityName"></span></h1>
+      <p>Temperature: <span id="displayCityTemp"></span></p>
+      <p>Humidity: <span id="displayCityHumidity"></span></p>
+      <p>Wind Speed: <span id="displayCityWind"></span></p>
+      <p>UV Index: <span id="displayCityUVindex"></span></p>
+     </div>
+    </main>
+  </div>
+</div>
+
+<div class="container" id="extendedForecast">
+    <h3 id="5-day">5-Day Forecast:</h3>
+    <section class="row" id="extended-forecast">
+
+        <div class="card text-white bg-primary mb 3" style="max-width: 10rem;">
+            <div class="card-body">
+                <h4 class="card-title" id="day-1"></h4>
+                <img id="icon1"/>
+            <br>
+            <p class="card-text">Temperature: <span id="temp-1"></span></p>
+            <p>Humidity: <span id="humidity-1"></span></p>
+            </div>
+        </div>  
+
+        <div class="card text-white bg-primary mb 3" style="max-width: 10rem;">
+            <div class="card-body">
+                <h4 class="card-title" id="day-2"></h4>
+                <img id="icon2"/>
+            <br>
+            <p class="card-text">Temperature: <span id="temp-2"></span></p>
+            <p>Humidity: <span id="humidity-2"></span></p>
+            </div>
+        </div>
+
+        <div class="card text-white bg-primary mb 3" style="max-width: 10rem;">
+            <div class="card-body">
+                <h4 class="card-title" id="day-3"></h4>
+                <img id="icon3"/>
+            <br>
+            <p class="card-text">Temperature: <span id="temp-3"></span</p>
+            <p>Humidity: <span id="humidity-3"></span</p>
+            </div>
+        </div>
+
+        <div class="card text-white bg-primary mb 3" style="max-width: 10rem;">
+            <div class="card-body">
+                <h4 class="card-title" id="day-4"></h4>
+                <img id="icon4"/>
+            <br>
+            <p class="card-text">Temperature: <span id="temp-4"></span</p>
+            <p>Humidity: <span id="humidity-4"></span</p>
+            </div>
+        </div>
+
+        <div class="card text-white bg-primary mb 3" style="max-width: 10rem;">
+            <div class="card-body">
+                <h4 class="card-title" id="day-5"></h4>
+                <img id="icon5"/>
+            <br>
+            <p class="card-text">Temperature: <span id="temp-5"></span</p>
+            <p>Humidity: <span id="humidity-5"></span</p>
+            </div>
+        </div> 
+    
+    </section> 
+</div>
+
+<script src="https://kit.fontawesome.com/b7e5786d2b.js" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+<script src="./assets/js/script.js"></script>            
+</body>
+</html> 
